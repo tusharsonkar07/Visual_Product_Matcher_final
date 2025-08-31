@@ -1,0 +1,60 @@
+﻿id,name,category,price,currency,image_path,description,brand,available
+1,Classic White Sneakers,shoes,59.99,USD,static/images/white-sneakers-1.jpg,Premium white leather sneakers with comfortable sole,StyleCraft,TRUE
+2,Black Running Shoes,shoes,89.99,USD,static/images/black-running-shoes-2.jpg,High-performance running shoes with advanced cushioning,SportMax,TRUE
+3,Brown Leather Boots,shoes,129.99,USD,static/images/brown-leather-boots-3.jpg,Handcrafted brown leather boots for all occasions,Heritage,TRUE
+4,Canvas High-Tops,shoes,199.99,USD,static/images/canvas-high-tops-4.jpg,Classic canvas high-top sneakers in multiple colors,UrbanStep,TRUE
+5,Formal Black Oxfords,shoes,69.99,USD,static/images/formal-black-oxfords-5.jpg,Elegant black oxford shoes for formal occasions,ClassicStyle,TRUE
+6,Red Athletic Sneakers,shoes,249.99,USD,static/images/red-athletic-sneakers-6.jpg,Vibrant red athletic sneakers for active lifestyle,ActiveWear,TRUE
+7,Hiking Boots,shoes,159.99,USD,static/images/hiking-boots-7.jpg,Durable hiking boots with excellent grip and support,TrailMaster,TRUE
+8,White Canvas Sneakers,shoes,179.99,USD,static/images/white-canvas-sneakers-8.jpg,Minimalist white canvas sneakers for everyday wear,SimpleStyle,TRUE
+9,Blue Denim Sneakers,shoes,79.99,USD,static/images/blue-denim-sneakers-9.jpg,Trendy denim sneakers with unique texture,DenimCraft,TRUE
+10,Black Leather Loafers,shoes,99.99,USD,static/images/black-leather-loafers-10.jpg,Sophisticated black leather loafers for business,Executive,TRUE
+11,Leather Crossbody Bag,bags,189.99,USD,static/images/leather-crossbody-bag-11.jpg,Elegant leather crossbody bag with adjustable strap,LuxeLeather,TRUE
+12,Canvas Tote Bag,bags,149.99,USD,static/images/canvas-tote-bag-12.jpg,Spacious canvas tote bag perfect for daily use,EcoCarry,TRUE
+13,Black Backpack,bags,49.99,USD,static/images/black-backpack-13.jpg,Modern black backpack with laptop compartment,TechCarry,TRUE
+14,Designer Handbag,bags,89.99,USD,static/images/designer-handbag-14.jpg,Premium designer handbag with gold accents,Elegance,TRUE
+15,Travel Duffel Bag,bags,299.99,USD,static/images/travel-duffel-bag-15.jpg,Large capacity duffel bag for travel and gym,Wanderlust,TRUE
+16,Minimalist Wallet,bags,119.99,USD,static/images/minimalist-wallet-16.jpg,Slim minimalist wallet with RFID protection,SlimTech,TRUE
+17,Vintage Messenger Bag,bags,39.99,USD,static/images/vintage-messenger-bag-17.jpg,Retro messenger bag with brass buckles,Vintage Co,TRUE
+18,Evening Clutch,bags,129.99,USD,static/images/evening-clutch-18.jpg,Elegant evening clutch with pearl details,GlamourNight,TRUE
+19,Hiking Backpack,bags,79.99,USD,static/images/hiking-backpack-19.jpg,Technical hiking backpack with hydration system,MountainGear,TRUE
+20,Laptop Bag,bags,199.99,USD,static/images/laptop-bag-20.jpg,Professional laptop bag with multiple compartments,ProCarry,TRUE
+21,Casual T-Shirt,clothing,99.99,USD,static/images/casual-t-shirt-21.jpg,Comfortable cotton t-shirt in various colors,ComfortWear,TRUE
+22,Denim Jacket,clothing,29.99,USD,static/images/denim-jacket-22.jpg,Classic blue denim jacket with vintage wash,DenimCraft,TRUE
+23,Formal Dress Shirt,clothing,89.99,USD,static/images/formal-dress-shirt-23.jpg,Crisp white dress shirt for professional wear,BusinessPro,TRUE
+24,Wool Sweater,clothing,59.99,USD,static/images/wool-sweater-24.jpg,Soft wool sweater perfect for cold weather,CozyKnits,TRUE
+25,Summer Dress,clothing,79.99,USD,static/images/summer-dress-25.jpg,Light and airy summer dress with floral pattern,SummerVibes,TRUE
+26,Leather Jacket,clothing,69.99,USD,static/images/leather-jacket-26.jpg,Premium black leather jacket with silver zippers,RockStyle,TRUE
+27,Yoga Pants,clothing,299.99,USD,static/images/yoga-pants-27.jpg,Stretchy yoga pants with moisture-wicking fabric,ActiveFlex,TRUE
+28,Hooded Sweatshirt,clothing,49.99,USD,static/images/hooded-sweatshirt-28.jpg,Comfortable hooded sweatshirt in soft cotton blend,StreetWear,TRUE
+29,Chino Pants,clothing,59.99,USD,static/images/chino-pants-29.jpg,Classic chino pants in navy blue,Preppy Style,TRUE
+30,Silk Blouse,clothing,69.99,USD,static/images/silk-blouse-30.jpg,Elegant silk blouse perfect for office wear,Sophisticate,TRUE
+31,Wireless Earbuds,electronics,99.99,USD,static/images/wireless-earbuds-31.jpg,Premium wireless earbuds with noise cancellation,SoundTech,TRUE
+32,Smartphone Case,electronics,199.99,USD,static/images/smartphone-case-32.jpg,Protective smartphone case with elegant design,ProtectPro,TRUE
+33,Laptop Stand,electronics,24.99,USD,static/images/laptop-stand-33.jpg,Adjustable aluminum laptop stand for ergonomic work,ErgoTech,TRUE
+34,Wireless Charger,electronics,79.99,USD,static/images/wireless-charger-34.jpg,Fast wireless charging pad for all devices,ChargeFast,TRUE
+35,Bluetooth Speaker,electronics,39.99,USD,static/images/bluetooth-speaker-35.jpg,Portable Bluetooth speaker with rich sound,AudioMax,TRUE
+36,Smart Watch,electronics,129.99,USD,static/images/smart-watch-36.jpg,Advanced fitness tracking smartwatch,FitTech,TRUE
+37,USB-C Hub,electronics,299.99,USD,static/images/usb-c-hub-37.jpg,Multi-port USB-C hub with 4K HDMI output,ConnectHub,TRUE
+38,Power Bank,electronics,59.99,USD,static/images/power-bank-38.jpg,High-capacity power bank for mobile devices,PowerPlus,TRUE
+39,Gaming Mouse,electronics,49.99,USD,static/images/gaming-mouse-39.jpg,Precision gaming mouse with RGB lighting,GamePro,TRUE
+40,Mechanical Keyboard,electronics,89.99,USD,static/images/mechanical-keyboard-40.jpg,Premium mechanical keyboard with tactile switches,TypeMaster,TRUE
+41,Ceramic Coffee Mug,home,149.99,USD,static/images/ceramic-coffee-mug-41.jpg,Handcrafted ceramic mug perfect for morning coffee,BrewCraft,TRUE
+42,Wooden Cutting Board,home,19.99,USD,static/images/wooden-cutting-board-42.jpg,Premium bamboo cutting board with juice groove,KitchenPro,TRUE
+43,Scented Candle,home,39.99,USD,static/images/scented-candle-43.jpg,Soy wax scented candle with relaxing lavender fragrance,AromaHome,TRUE
+44,Throw Pillow,home,24.99,USD,static/images/throw-pillow-44.jpg,Soft decorative throw pillow with geometric pattern,ComfortDecor,TRUE
+45,Wall Art Print,home,34.99,USD,static/images/wall-art-print-45.jpg,Modern abstract wall art print for contemporary spaces,ArtSpace,TRUE
+46,Table Lamp,home,49.99,USD,static/images/table-lamp-46.jpg,Minimalist table lamp with adjustable brightness,LightCraft,TRUE
+47,Storage Basket,home,89.99,USD,static/images/storage-basket-47.jpg,Woven storage basket for organizing home essentials,OrganizePro,TRUE
+48,Picture Frame,home,29.99,USD,static/images/picture-frame-48.jpg,Elegant wooden picture frame in multiple sizes,MemoryKeep,TRUE
+49,Essential Oil Diffuser,home,19.99,USD,static/images/essential-oil-diffuser-49.jpg,Ultrasonic essential oil diffuser with LED lights,ZenSpace,TRUE
+50,Decorative Vase,home,59.99,USD,static/images/decorative-vase-50.jpg,Beautiful ceramic vase for fresh or dried flowers,FloralDecor,TRUE
+51,Stainless Steel Water Bottle,accessories,44.99,USD,static/images/water-bottle-51.jpg,Insulated water bottle keeps drinks cold for 24 hours,HydratePro,TRUE
+52,Leather Watch,accessories,29.99,USD,static/images/leather-watch-52.jpg,Classic leather strap watch with precision movement,TimeClass,TRUE
+53,Sunglasses,accessories,189.99,USD,static/images/sunglasses-53.jpg,Polarized sunglasses with UV protection,SunGuard,TRUE
+54,Baseball Cap,accessories,79.99,USD,static/images/baseball-cap-54.jpg,Adjustable baseball cap in premium cotton,CapStyle,TRUE
+55,Silk Scarf,accessories,24.99,USD,static/images/silk-scarf-55.jpg,Luxurious silk scarf with artistic print,SilkArt,TRUE
+56,Smart Mobile Phone,electronics,59.99,USD,static/images/smart-phone-56.jpg,Smart Phone ,Samsung,TRUE
+57,Tablet,electronics,179.99,USD,static/images/tablet-57.jpg,Advanced Apple tablet,Apple,TRUE
+58,Laptop,electronics,119.99,USD,static/images/laptop-58.jpg,Macbook Pro laptop,Apple,TRUE
+59,TV,electronics,299.99,USD,static/images/tv-59.jpg,Sony 4k TV,Sony,TRUE
