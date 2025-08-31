@@ -7,13 +7,13 @@ AI-powered visual similarity search for products. Upload an image or paste a URL
   ![Preview 1](https://drive.google.com/file/d/1muOWL2n6Ueqqmnsd1vWVC6MbCaaI8Uui/view?usp=drive_link)
   
 - Precomputed embeddings for fast search; MobileNetV2 for low memory
-  ![Preview 1](https://drive.google.com/file/d/1fSZLLn_KezXk0MklFodzYETIQhiNd0Ej/view?usp=sharing)
+  ![Preview 2](https://drive.google.com/file/d/1fSZLLn_KezXk0MklFodzYETIQhiNd0Ej/view?usp=sharing)
   
 - Cosine similarity ranking, adjustable threshold (defaults to show all)
-  ![Preview 1](https://drive.google.com/uc?export=view&id=1wpBv6qsvrW2nmgP3CpUT9_r5r6qXMIEU)
+  ![Preview 3](https://drive.google.com/uc?export=view&id=1wpBv6qsvrW2nmgP3CpUT9_r5r6qXMIEU)
   
 - Clean UI with loading skeletons; correct image URL handling
-  ![Preview 1](https://drive.google.com/file/d/11ZFn9fk0SvZCmjHEMB5CfVTOB3U_8iKX/view?usp=sharing)
+  ![Preview 4](https://drive.google.com/file/d/11ZFn9fk0SvZCmjHEMB5CfVTOB3U_8iKX/view?usp=sharing)
   
 - Dockerized backend/frontend; Render (backend) + Vercel (frontend) ready
 
