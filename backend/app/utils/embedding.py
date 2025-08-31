@@ -1,6 +1,6 @@
 import tensorflow as tf
-from tensorflow.keras.applications import ResNet50
-from tensorflow.keras.applications.resnet50 import preprocess_input
+from tensorflow.keras.applications import MobileNetV2
+from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 from tensorflow.keras.preprocessing import image
 import numpy as np
 from PIL import Image
@@ -9,24 +9,24 @@ import logging
 logger = logging.getLogger(__name__)
 
 class EmbeddingExtractor:
-    """Extract feature embeddings using ResNet50"""
+    """Extract feature embeddings using a lightweight CNN (MobileNetV2)."""
     
     def __init__(self):
         """Initialize ResNet50 model for feature extraction"""
         try:
-            # Load ResNet50 without top layers for feature extraction
-            self.model = ResNet50(
+            # Load MobileNetV2 (much smaller memory footprint than ResNet50)
+            self.model = MobileNetV2(
                 weights='imagenet',
                 include_top=False,
                 pooling='avg',
                 input_shape=(224, 224, 3)
             )
-            
+
             # Make model non-trainable
             self.model.trainable = False
-            
-            logger.info("ResNet50 model loaded successfully")
-            
+
+            logger.info("MobileNetV2 model loaded successfully")
+
         except Exception as e:
             logger.error(f"Error loading ResNet50 model: {e}")
             raise

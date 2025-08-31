@@ -36,5 +36,10 @@ EXPOSE 8000
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:8000/api/health || exit 1
 
-# Command to run the application
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+# Runtime tuning to reduce memory/threads in small instances
+ENV OMP_NUM_THREADS=1 \
+    TF_NUM_INTRAOP_THREADS=1 \
+    TF_NUM_INTEROP_THREADS=1
+
+# Command to run the application (no auto-reload in production to save memory)
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

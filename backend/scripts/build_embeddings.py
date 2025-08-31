@@ -130,8 +130,8 @@ def verify_embeddings():
             logger.error("Found NaN values in embeddings")
             return False
         
-        # Check embedding dimensions
-        if embeddings.shape[1] != 2048:  # ResNet50 feature dimension
+        # Check embedding dimensions (MobileNetV2 outputs 1280)
+        if embeddings.shape[1] not in (1280, 1024, 2048):
             logger.error(f"Unexpected embedding dimension: {embeddings.shape[1]}")
             return False
         

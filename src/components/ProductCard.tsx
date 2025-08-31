@@ -2,7 +2,7 @@ import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
-import { Eye, ShoppingCart } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 import { Product } from '@/data/mockProducts';
 import { getImageUrl } from '@/lib/api';
 
@@ -46,15 +46,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, showSimilarity = fal
           {product.category}
         </Badge>
         
-        <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-150 flex items-center justify-center">
-          <Button
-            variant="secondary"
-            size="icon"
-            className="bg-white/90 hover:bg-white transition-transform transform scale-0 group-hover:scale-100 duration-150"
-          >
-            <Eye className="h-4 w-4" />
-          </Button>
-        </div>
+        {/* Hover eye icon removed for cleaner UI */}
       </div>
       
       <CardContent className="p-4">

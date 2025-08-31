@@ -91,6 +91,15 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({ onImageUpload, isLoading 
 
   return (
     <div className="w-full max-w-2xl mx-auto space-y-4">
+      {/* Hidden file input rendered always so Browse works even when preview is shown */}
+      <input
+        ref={fileInputRef}
+        type="file"
+        id="image-file-input"
+        accept="image/jpeg,image/jpg,image/png,image/webp,image/*"
+        onChange={(e) => e.target.files && handleFiles(e.target.files)}
+        className="hidden"
+      />
       {previewUrl ? (
         <div className="relative bg-card rounded-xl border-2 border-border overflow-hidden shadow-lg">
           <img
@@ -124,14 +133,6 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({ onImageUpload, isLoading 
           onDrop={handleDrop}
           onClick={() => fileInputRef.current?.click()}
         >
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept="image/jpeg,image/jpg,image/png,image/webp,image/*"
-            onChange={(e) => e.target.files && handleFiles(e.target.files)}
-            className="hidden"
-          />
-          
           <div className="flex flex-col items-center space-y-4">
             <div className="p-4 bg-primary/10 rounded-full">
               <Upload className="h-8 w-8 text-primary" />
@@ -163,9 +164,14 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({ onImageUpload, isLoading 
         </Button>
         
         <Button
-          onClick={() => fileInputRef.current?.click()}
+          onClick={() => {
+            if (fileInputRef.current) {
+              // Ensure selecting the same file again still triggers onChange
+              fileInputRef.current.value = '';
+              fileInputRef.current.click();
+            }
+          }}
           className="flex-1 bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg transition-all hover:scale-105"
-          disabled={isLoading}
         >
           <Image className="h-4 w-4 mr-2" />
           Browse Files

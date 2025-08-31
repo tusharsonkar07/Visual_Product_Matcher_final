@@ -74,12 +74,12 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
             value={[similarityThreshold]}
             onValueChange={([value]) => onSimilarityChange(value)}
             max={100}
-            min={50}
+            min={0}
             step={1}
             className="w-full"
           />
           <div className="flex justify-between text-xs text-muted-foreground">
-            <span>50% (More results)</span>
+            <span>0% (All results)</span>
             <span>100% (Exact matches)</span>
           </div>
         </div>

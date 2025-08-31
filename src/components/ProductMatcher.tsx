@@ -17,7 +17,7 @@ const ProductMatcher: React.FC = () => {
   const [searchResults, setSearchResults] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
-  const [similarityThreshold, setSimilarityThreshold] = useState(60);
+  const [similarityThreshold, setSimilarityThreshold] = useState(0);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [filtersCollapsed, setFiltersCollapsed] = useState(false);
   const [categories, setCategories] = useState<string[]>(['All']);
@@ -126,10 +126,20 @@ const ProductMatcher: React.FC = () => {
       
       setSearchResults(response.results);
       setHasSearched(true);
-      
+
+      // Count products that actually display after current filters
+      const filteredCount = response.results.filter((product) => {
+        const similarity = product.similarity_percentage || product.similarity || 0;
+        const meetsThreshold = similarity >= similarityThreshold;
+        const meetsCategory = selectedCategories.length === 0 ||
+          selectedCategories.includes('All') ||
+          selectedCategories.includes(product.category);
+        return meetsThreshold && meetsCategory;
+      }).length;
+
       toast({
         title: "Search completed!",
-        description: `Found ${response.results.length} similar products`,
+        description: `Found ${filteredCount} products`,
         variant: "default"
       });
       
@@ -160,7 +170,7 @@ const ProductMatcher: React.FC = () => {
   };
 
   const handleClearFilters = () => {
-    setSimilarityThreshold(60);
+    setSimilarityThreshold(0);
     setSelectedCategories([]);
   };
 
@@ -173,7 +183,7 @@ const ProductMatcher: React.FC = () => {
             Visual Product Matcher
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Upload an image and find visually similar products using AI-powered ResNet50 image recognition
+            Upload an image and find visually similar products using AI-powered MobileNetV2 image recognition
           </p>
         </div>
 
@@ -269,7 +279,7 @@ const ProductMatcher: React.FC = () => {
                   Search Results
                 </h2>
                 <div className="text-muted-foreground">
-                  {filteredResults.length} of {searchResults.length} products
+                  {filteredResults.length} products
                 </div>
               </div>
 
