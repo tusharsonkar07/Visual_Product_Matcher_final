@@ -4,9 +4,15 @@ AI-powered visual similarity search for products. Upload an image or paste a URL
 
 ### Features
 - Image upload (file/URL), JPEG/PNG/WebP; reliable “Browse Files” behavior
+  ![Preview 1](https://drive.google.com/uc?export=view&id=1wpBv6qsvrW2nmgP3CpUT9_r5r6qXMIEU)
+  
 - Precomputed embeddings for fast search; MobileNetV2 for low memory
 - Cosine similarity ranking, adjustable threshold (defaults to show all)
+  ![Preview 1](https://drive.google.com/uc?export=view&id=1wpBv6qsvrW2nmgP3CpUT9_r5r6qXMIEU)
+  
 - Clean UI with loading skeletons; correct image URL handling
+  ![Preview 1](https://drive.google.com/uc?export=view&id=1wpBv6qsvrW2nmgP3CpUT9_r5r6qXMIEU)
+  
 - Dockerized backend/frontend; Render (backend) + Vercel (frontend) ready
 
 ### Quick Start (Docker)
