@@ -66,5 +66,8 @@ uvicorn app.main:app --reload
 - FastAPI, TensorFlow (MobileNetV2), scikit-learn
 - Vite, React, TypeScript, Tailwind, shadcn-ui
 
+### Documentations
+- You can read the complete documentations in "docs" folder present above in the directories
+
 ### License
 MIT
