@@ -1,6 +1,7 @@
 ## Visual Product Matcher
 
 AI-powered visual similarity search for products. Upload an image or paste a URL and get visually similar catalog items, ranked by cosine similarity. Backend: FastAPI + TensorFlow (MobileNetV2). Frontend: Vite + React + Tailwind, deployable on Vercel.
+
 Live Website Link(Frontend + Backend): 
 https://visual-product-matcher-final.vercel.app/
 
